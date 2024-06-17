@@ -1,4 +1,5 @@
 # CMSIS-Toolbox Examples for Embedded World paper
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/ci.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 
 This repository contains examples for Embedded World 2024 paper:
   [**Simplifying the integration of software components in modern microcontroller systems**](paper.md)

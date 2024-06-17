@@ -1,0 +1,86 @@
+name: Verify CMSIS Compliance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-cmsis-compliance-example1_cm4_mps2_an386:
+    name: Verify CMSIS Compliance example1_cm4_mps2_an386
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example1_cm4_mps2_an386
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example1_cm4_mps2_an386/blink.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
+  verify-cmsis-compliance-example1_cm55_mps3_an552:
+    name: Verify CMSIS Compliance example1_cm55_mps3_an552
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example2_cm4_mps2_an386
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example1_cm55_mps3_an552/blink.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
+  verify-cmsis-compliance-example2_cm4_mps2_an386:
+    name: Verify CMSIS Compliance example2_cm4_mps2_an386
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example2_cm4_mps2_an386
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example2_cm4_mps2_an386/hello.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
+  verify-cmsis-compliance-example2_cm55_mps3_an552:
+    name: Verify CMSIS Compliance example2_cm55_mps3_an552
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example2_cm55_mps3_an552
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example2_cm55_mps3_an552/hello.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
+  verify-cmsis-compliance-example3_cm4_mps2_an386:
+    name: Verify CMSIS Compliance example3_cm4_mps2_an386
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example3_cm4_mps2_an386
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example3_cm4_mps2_an386/coremark.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
+  verify-cmsis-compliance-example4_mps2_multi_devices:
+    name: Verify CMSIS Compliance example4_mps2_multi_devices
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example4_mps2_multi_devices
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example4_mps2_multi_devices/coremark.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
+  verify-cmsis-compliance-example5_multi_projects:
+    name: Verify CMSIS Compliance example5_multi_projects
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example5_multi_projects
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example5_multi_projects/coremark-pro.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
