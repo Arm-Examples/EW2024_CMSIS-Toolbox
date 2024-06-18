@@ -1,4 +1,5 @@
 # Hello world example for Cortex-M55 running on Arm MPS3 FPGA board (AN552 FPGA image)
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example2_cm55_mps3_an552.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 
 ## Descriptions
 

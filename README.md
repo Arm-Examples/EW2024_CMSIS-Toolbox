@@ -1,5 +1,4 @@
 # CMSIS-Toolbox Examples for Embedded World paper
-[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/ci.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 
 This repository contains examples for Embedded World 2024 paper:
   [**Simplifying the integration of software components in modern microcontroller systems**](paper.md)
@@ -57,15 +56,15 @@ After installing the tools, you need to setup a local CMSIS-PACK storage locatio
 This repository contains the following examples:
 
 - Example 1: A minimal blinky project
-  - example1_cm4_mps2_an386  : For MPS2/MPS2+ with Cortex-M4 FPGA image (AN386)
-  - example1_cm55_mps3_an552 : For MPS3 with Cortex-M55 FPGA image (AN552)
+  - example1_cm4_mps2_an386  : For MPS2/MPS2+ with Cortex-M4 FPGA image (AN386) [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example1_cm4_mps2_an386.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
+  - example1_cm55_mps3_an552 : For MPS3 with Cortex-M55 FPGA image (AN552) [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example1_cm55_mps3_an552.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 - Example 2: Hello world based on CMSIS-Compiler, with printf message(s) output via a UART interface.
-  - example2_cm4_mps2_an386  : For MPS2/MPS2+ with Cortex-M4 FPGA image (AN386)
-  - example2_cm55_mps3_an552 : For MPS3 with Cortex-M55 FPGA image (AN552)
+  - example2_cm4_mps2_an386  : For MPS2/MPS2+ with Cortex-M4 FPGA image (AN386) [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example2_cm4_mps2_an386.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
+  - example2_cm55_mps3_an552 : For MPS3 with Cortex-M55 FPGA image (AN552) [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example2_cm55_mps3_an552.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 - Example 3: Compilation of the SPEC's CoreMark benchmark to demonstrate compiler options and linker script setup.
-  - example3_cm4_mps2_an386  : For MPS2/MPS2+ with Cortex-M4 FPGA image (AN386)
+  - example3_cm4_mps2_an386  : For MPS2/MPS2+ with Cortex-M4 FPGA image (AN386) [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example3_cm4_mps2_an386.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 - Example 4: A modified version of the example 3 to support multiple types of FPGA images.
-  - example4_mps2_multi_devices : For MPS2/MPS2+ and MPS3 FPGA images including:
+  - example4_mps2_multi_devices : For MPS2/MPS2+ and MPS3 FPGA images including: [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example4_mps2_multi_devices.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
     - AN382: [MPS2/MPS2+] Cortex-M0 with CMSDK (Cortex-M System Design Kit)
     - AN383: [MPS2/MPS2+] Cortex-M0+ with CMSDK (Cortex-M System Design Kit)
     - AN385: [MPS2/MPS2+] Cortex-M3 with CMSDK (Cortex-M System Design Kit)
@@ -76,7 +75,7 @@ This repository contains the following examples:
     - AN552: [MPS3] Cortex-M55 with Corstone-300
     - AN555: [MPS3] Cortex-M85 with Corstone-310
 - Example 5: Compilation of the SPEC's CoreMark-Pro benchmark to demonstrate multiple projects in a CMSIS solution, as well as using clayer.
-  - example5_multi_projects  : For MPS2/MPS2+ with Cortex-M7 FPGA image (AN500)
+  - example5_multi_projects  : For MPS2/MPS2+ with Cortex-M7 FPGA image (AN500) [![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example5_multi_projects.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 
 In each of the example directories, there is a makefile and a batch file to help you to go through different steps.
 

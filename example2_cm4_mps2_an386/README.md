@@ -1,4 +1,5 @@
 # Hello world example for Cortex-M4 running on Arm MPS2/MPS2+ FPGA board (AN386 FPGA image)
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/EW2024_CMSIS-Toolbox/verify-example2_cm4_mps2_an386.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 
 ## Descriptions
 

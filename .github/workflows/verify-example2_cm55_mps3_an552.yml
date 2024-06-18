@@ -1,0 +1,23 @@
+name: Verify CMSIS Compliance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 6 * * 7'
+
+jobs:
+  verify-cmsis-compliance-example2_cm55_mps3_an552:
+    name: Verify CMSIS Compliance example2_cm55_mps3_an552
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Arm-Examples/verify-cmsis-example-action@latest
+        name: Verify CMSIS Compliance example2_cm55_mps3_an552
+        with:
+          branch: ${{ github.ref }}
+          project-file: ./example2_cm55_mps3_an552/hello.csolution.yml
+          API_TOKEN: ${{ secrets.CMSIS_API_KEY }}
+          output-artifact: output-example2_cm55_mps3_an552
