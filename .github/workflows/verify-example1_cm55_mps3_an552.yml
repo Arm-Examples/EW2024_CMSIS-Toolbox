@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '0 6 * * 7'
+    - cron: '0 6 * * 0'
 
 jobs:
   verify-cmsis-compliance-example1_cm55_mps3_an552:
