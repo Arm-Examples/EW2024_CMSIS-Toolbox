@@ -25,7 +25,7 @@ The complexity of software running in high-end microcontrollers has increased si
 
 To help manage multiple software components in embedded system projects, Arm® introduced the CMSIS-PACK in 2014 as part of CMSIS version 4 (CMSIS – it was originally named Cortex® Microcontroller Software Interface Standard and was renamed Common Microcontroller Software Interface Standard in 2023). A software component delivered as a CMSIS-PACK package contains software files, optional documentation, as well as an XML-based package description file. This XML file enables development tools to understand the contents, as well as the dependency of the package. The CMSIS-PACK mechanism has now become the most popular standard for distributing MCU device specific software packages. Today, for example, there are around 1400 CMSIS-PACKs available, supporting over 10000 Arm based microcontrollers/devices.
 
-While the use of the CMSIS-PACK mechanism in toolchains with an IDE has been popular and successful, the landscape of how software is developed has changed. As well as using traditional IDEs, many software developers now also need to work with regression test environments (sometimes referred as Continuous Integration and Continuous Deployment, or “CI/CD”) and test environments for ML (Machine Learning) model tuning (sometimes referred as MLOps). These test environments are usually based on Command Line Interface (CLI), which can run in local or on remote servers (e.g. cloud servers, including systems like GitHub actions). To facilitate the use of CMSIS-PACK in these situations, additional workflow solutions are needed.
+While the use of the CMSIS-PACK mechanism in toolchains with an IDE has been popular and successful, the landscape of how software is developed has changed. As well as using traditional IDEs, many software developers now also need to work with regression test environments (sometimes referred as Continuous Integration and Continuous Deployment, or "CI/CD") and test environments for ML (Machine Learning) model tuning (sometimes referred as MLOps). These test environments are usually based on Command Line Interface (CLI), which can run in local or on remote servers (e.g. cloud servers, including systems like GitHub actions). To facilitate the use of CMSIS-PACK in these situations, additional workflow solutions are needed.
 
 Apart from the challenge of integrating CMSIS-PACK components in CLI environments, there are now additional software development challenges. These are:
 
@@ -44,7 +44,7 @@ The CMSIS-Toolbox project is now version 2.2.1 (22-March-2024) and is gaining tr
 
 ## GENERAL INFORMATION ABOUT THE CMSIS-TOOLBOX
 
-The CMSIS-Toolbox is not just about the utilities, it is also about standardizing the utilization of YAML files to describe projects and the software components that are required. The YAML based projects are called “csolution” projects. With such open standardization, any tool vendor in the Arm ecosystem is able to deliver support for YAML based project configuration files. This also means that software developers can use the same project configurations for multiple toolchains.
+The CMSIS-Toolbox is not just about the utilities, it is also about standardizing the utilization of YAML files to describe projects and the software components that are required. The YAML based projects are called "csolution" projects. With such open standardization, any tool vendor in the Arm ecosystem is able to deliver support for YAML based project configuration files. This also means that software developers can use the same project configurations for multiple toolchains.
 
 The CMSIS-Toolbox utilities are opensource projects and are part of the Open-CMSIS-Pack (https://www.open-cmsis-pack.org/). The links to the source code repositories can be found in the [Open-CMSIS-Pack GitHub](https://github.com/Open-CMSIS-Pack). To download the pre-built binary packages, please visit the [release page](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases).
 
@@ -76,8 +76,8 @@ The CMSIS-Toolbox is highly versatile and powerful, but at the same time, can be
 |---|---|
 |Open CMSIS-Pack home page|https://www.open-cmsis-pack.org/|
 |CMSIS-ToolBox git repository|https://github.com/Open-CMSIS-Pack/cmsis-toolbox|
-|CMSIS-ToolBox documentation|https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/README.md|
-|CMSIS-ToolBox documentation – installation guide|https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/installation.md|
+|CMSIS-ToolBox documentation|https://open-cmsis-pack.github.io/cmsis-toolbox/|
+|CMSIS-ToolBox documentation – installation guide|https://open-cmsis-pack.github.io/cmsis-toolbox/installation/|
 |CMSIS-Toolbox examples|https://github.com/Open-CMSIS-Pack/csolution-examples|
 |Browsing available CMSIS-PACKs|https://www.keil.arm.com/packs/|
 |Open-CMSIS-Pack git repository|https://github.com/Open-CMSIS-Pack|
@@ -125,7 +125,7 @@ It is important to highlight that the CMSIS-Toolbox does not replace existing bu
 ## INSTALLATION
 
 The installation guide of the CMSIS-Toolbox is available in this page:
-https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/installation.md
+https://open-cmsis-pack.github.io/cmsis-toolbox/installation/
 
 The key steps to creating a working tool environment includes:
 
@@ -137,15 +137,15 @@ The key steps to creating a working tool environment includes:
 If you are using the CMSIS-Toolbox utilities directly, you also need to install the following tools:
 
 * CMAKE
-  * If you are using a modern Linux distribution, you can install CMAKE using “sudo apt install cmake”. Otherwise, for other installers, please visit https://cmake.org/download  .
+  * If you are using a modern Linux distribution, you can install CMAKE using "sudo apt install cmake". Otherwise, for other installers, please visit https://cmake.org/download  .
 * Ninja (build system)
-  * If you are using a modern Linux distribution, you can install Ninja using “sudo apt install ninja-build”. Otherwise, for other installers, please visit https://ninja-build.org.
+  * If you are using a modern Linux distribution, you can install Ninja using "sudo apt install ninja-build". Otherwise, for other installers, please visit https://ninja-build.org.
 
 If you would like to try out the Arm Compiler 6 (AC6) with the CMSIS-Toolbox, you can use the AC6 with a community license. Further information is available here: https://learn.arm.com/learning-paths/microcontrollers/vcpkg-tool-installation/licenseactivation/ 
 
-If you are using a cloud computing environment such as Docker, instead of installing the tools manually, you could use the VCPGK mechanism to install the tool from an artifactory system. Information for this installation method is covered here: https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/installation.md#vcpkg---setup-using-cli  
+If you are using a cloud computing environment such as Docker, instead of installing the tools manually, you could use the VCPGK mechanism to install the tool from an artifactory system. Information for this installation method is covered here: https://open-cmsis-pack.github.io/cmsis-toolbox/installation#vcpkg-setup-using-cli  
 
-You can also use VCPKG with Visual Studio Code. Information for this can be found here: https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/installation.md#vcpgk---setup-in-vs-code 
+You can also use VCPKG with Visual Studio Code. Information for this can be found here: https://open-cmsis-pack.github.io/cmsis-toolbox/installation#vcpkg-setup-in-vs-code 
 
 Please note that currently the VCPKG method is not supported on Arm64 Linux systems.
 
@@ -352,7 +352,7 @@ Starting from IAR EWARM version 9.50, a csolution file can be imported when crea
 
 * the CMSIS-Toolbox, CMAKE and Ninja-Build installed, and 
 * a local CMSIS-Pack storage location, and 
-* environment variables setup according to the [CMSIS-Toolbox installation guide](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/installation.md).
+* environment variables setup according to the [CMSIS-Toolbox installation guide](https://open-cmsis-pack.github.io/cmsis-toolbox/installation/).
 
 After the required tool setups have been undertaken, the csolution file can be imported using the following steps:
 
@@ -404,7 +404,7 @@ $> csolution list packs 	# List the installed CMSIS-PACKs
 ```
 
 Information about the command line options of csolution, cbuild and cpackget can be found in [this page](
-https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/build-tools.md).
+https://open-cmsis-pack.github.io/cmsis-toolbox/build-tools/).
 
 ## EXAMPLE 2 - A HELLO WORLD PROJECT USING THE CMSIS-TOOLBOX AND CMSIS-COMPILER
 
@@ -488,7 +488,7 @@ If you have been using compilation toolchain(s) for a while, you will be aware t
 
 You no doubt noticed that I did not prepare a linker script that specified the memory layout in examples 1 and 2. In some cases, the CMSIS-PACK for the device you use could include default linker scripts for the toolchain that you are using. In that case the csolution utility can pick up the default linker script for the linking stage.
 
-If the CMSIS-PACK does not provide a default linker script for the toolchain you have selected, the csolution automatically generates a linker script from a template using the memory layout extracted from the memory layout descriptions in the device’s CMSIS-PACK (i.e. the .pdsc file).  The following link contains further information: https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/build-overview.md#automatic-linker-script-generation  
+If the CMSIS-PACK does not provide a default linker script for the toolchain you have selected, the csolution automatically generates a linker script from a template using the memory layout extracted from the memory layout descriptions in the device’s CMSIS-PACK (i.e. the .pdsc file).  The following link contains further information: https://open-cmsis-pack.github.io/cmsis-toolbox/build-overview#automatic-linker-script-generation  
 
 Instead of using the default linker script or the generated linker script, you can specify a custom linker script for the project. This may be necessary, if, for example:
 
@@ -599,7 +599,7 @@ b) Compilation and linker options for each toolchain
 
 The options can be customized based on the needs of the project.
 
-Instead of defining project compilation options in `.cproject.yml` files, it is possible to create a default configuration using a `cdefault.yml` file. If there is no `cdefault.yml` file in the project directory, the default compilation settings are taken from the `cdefault.yml` file at the CMSIS-Toolbox installation location (i.e. `<CMSIS_COMPILER_ROOT>/cdefault.yml`). But, if there is a `cdefault.yml` in the same directory as the `.csolution.yml` file, the settings in that file would be used instead. Additional information can be found at : https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/YML-Input-Format.md#cdefault
+Instead of defining project compilation options in `.cproject.yml` files, it is possible to create a default configuration using a `cdefault.yml` file. If there is no `cdefault.yml` file in the project directory, the default compilation settings are taken from the `cdefault.yml` file at the CMSIS-Toolbox installation location (i.e. `<CMSIS_COMPILER_ROOT>/cdefault.yml`). But, if there is a `cdefault.yml` in the same directory as the `.csolution.yml` file, the settings in that file would be used instead. Additional information can be found at : https://open-cmsis-pack.github.io/cmsis-toolbox/YML-Input-Format#cdefault
 
 ## EXAMPLE 4 – SUPPORTING MULTIPLE HARDWARE TARGETS
 
@@ -781,7 +781,7 @@ In this example, I use the CoreMark-Pro from SPEC to illustrate how to create a 
 
 https://github.com/Arm-Examples/EW2024_CMSIS-Toolbox/tree/main/example5_multi_projects.
 
-To create the setup, I have created one csolution file and multiple cproject files. In addition, I have used clayer files for common project definitions such as common files and C macros in CoreMark-Pro, as well as hardware platform support files. For each project, a separate subdirectory is used. This requirement is defined in the CMSIS-Toolbox documentation (https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/build-overview.md#project-area). An illustration of the YAML file setup used in this example is illustrated by the following figure. Note: Software developers can choose their own filenames, folder names and the structure of the directories.
+To create the setup, I have created one csolution file and multiple cproject files. In addition, I have used clayer files for common project definitions such as common files and C macros in CoreMark-Pro, as well as hardware platform support files. For each project, a separate subdirectory is used. This requirement is defined in the CMSIS-Toolbox documentation (https://open-cmsis-pack.github.io/cmsis-toolbox/build-overview#project-area). An illustration of the YAML file setup used in this example is illustrated by the following figure. Note: Software developers can choose their own filenames, folder names and the structure of the directories.
 
 ![Multiple directories for multiple projects](./images/multiple_proj.png)
 
