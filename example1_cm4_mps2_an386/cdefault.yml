@@ -75,7 +75,7 @@ default:
 # This file overrides the cdefault.yml in <cmsis-toolbox-installation-dir>/etc 
 # or the cdefault.yml in $(CMSIS_COMPILR_ROOT)
 # See the following page for additional information.
-# https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/YML-Input-Format.md#cdefault
+# https://open-cmsis-pack.github.io/cmsis-toolbox/YML-Input-Format#cdefault
 # 
 # By default, the cdefault.yml in <cmsis-toolbox-installation-dir>/etc enables
 # semihosting in GCC and CLANG. This is not what I want for standalone devices
