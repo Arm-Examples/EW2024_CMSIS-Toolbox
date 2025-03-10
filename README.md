@@ -49,7 +49,7 @@ To run the examples, you need to install:
     - If using Embedded Workbench for ARM (EWARM), minimum version is 9.50.
     - If using IAR build tools for Arm (BXARM), most recent versions should be suitable.
 
-After installing the tools, you need to setup a local CMSIS-PACK storage location and environment variables for the CMSIS-Toolbox to work. Please see the details from CMSIS-Toolbox documentation: https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/installation.md
+After installing the tools, you need to setup a local CMSIS-PACK storage location and environment variables for the CMSIS-Toolbox to work. Please see the details from CMSIS-Toolbox documentation: https://open-cmsis-pack.github.io/cmsis-toolbox/installation/
 
 ## Examples in this repository
 
